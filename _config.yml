@@ -30,7 +30,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: jekyll-theme-hacker
+# theme: jekyll-theme-hacker
+remote_theme: "dracula/gh-pages"
 plugins:
   - jekyll-feed
 
