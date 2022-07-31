@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My Cookies Jar 😈🍪
+title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   My jar of all the cookies of awesomeness that i found while wandering in the forests of world wide web. Yum !!😋😋
@@ -35,7 +35,7 @@ plugins:
   - jekyll-redirect-from
  
  # Adding content collection
- collection:
+collection:
     Pages:
         output:true
         permalink:/:collection/:path
