@@ -34,11 +34,11 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
  
- # Adding content collections
- collections:
-  - Pages: 
-        output: true
-        permalink: /:path/
+ # Adding content collection
+ collection:
+    Pages:
+        output:true
+        permalink:/:collection/:path
     
 
 # Exclude from processing.
