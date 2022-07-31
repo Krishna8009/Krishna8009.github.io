@@ -36,9 +36,9 @@ plugins:
  
  # Adding content collections
  collections:
-  Pages: 
-    output: true
-    permalink: /:path/
+  - Pages: 
+        output: true
+        permalink: /:path/
     
 
 # Exclude from processing.
