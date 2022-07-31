@@ -36,7 +36,7 @@ plugins:
  
  # Adding content collection
 collection:
-    Pages:
+    - pages:
         output:true
         permalink:/:collection/:path
     
