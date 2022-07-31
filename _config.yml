@@ -21,7 +21,7 @@
 title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My jar of all the cookies of awesomeness that i found while wandering in the forests of world wide web. Yum !!😋😋
+  My jar of all the cookies of awesomeness that i found while wandering in the forests of world wide web. Yum !! 🧛🏻‍♂️😋😋
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://krishna8009.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
