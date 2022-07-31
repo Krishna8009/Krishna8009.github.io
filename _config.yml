@@ -40,6 +40,9 @@ collection:
     - pages:
         output:true
         permalink:/:collection/:path
+        
+include:
+    - _pages
     
 
 # Exclude from processing.
