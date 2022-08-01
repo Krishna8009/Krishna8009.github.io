@@ -13,3 +13,5 @@ layout: default
 
 ## Musings
 
+[[Contact-us.md]]
+
