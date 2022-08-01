@@ -3,11 +3,11 @@ source "https://rubygems.org"
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
 #
-#     bundle exec jekyll serve
+#bundle exec jekyll serve
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-#gem "jekyll", "~> 4.2.2"
+# gem "jekyll", "~> 4.2.2"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -32,5 +32,12 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-# For redirecting or customising urls as well as giving Jekyll posts and pages multiple URLs.
+
+# Gem Plugins that I use
 gem 'jekyll-redirect-from'
+gem 'jekyll-sitemap'
+gem 'kramdown'
+gem 'jekyll-toc'
+gem 'rouge'
+
+gem "webrick", "~> 1.7"
