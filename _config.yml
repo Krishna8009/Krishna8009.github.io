@@ -37,8 +37,8 @@ collections:
       output: true
       permalink: /notes/:title
 
-toc:
-  max_level: 3
+#toc:
+  #max_level: 3
 
 defaults:
   - scope:
