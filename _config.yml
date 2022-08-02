@@ -1,4 +1,4 @@
-title: My Site
+title: Test
 name: My linked notebook
 user_description: notenote.link
 notes_url: "https://krishna8009.github.io"
@@ -8,15 +8,13 @@ copyright_name: MIT
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://krishna8009.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
-description: >- # this means to ignore newlines until "baseurl:"
-  My jar of 
 
 # Build settings
-#remote_theme: "dracula/gh-pages"
+theme: null
 plugins:
   - jekyll-feed 
   - jekyll-sitemap
-  - jekyll-toc
+  #- jekyll-toc
   - jekyll-redirect-from
 
 markdown: kramdown
