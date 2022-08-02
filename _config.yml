@@ -12,7 +12,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   My jar of 
 
 # Build settings
-remote_theme: "dracula/gh-pages"
+#remote_theme: "dracula/gh-pages"
 plugins:
   - jekyll-feed 
   - jekyll-sitemap
@@ -37,8 +37,8 @@ collections:
       output: true
       permalink: /notes/:title
 
-toc:
-  max_level: 3
+#toc:
+  # max_level: 3
 
 defaults:
   - scope:
