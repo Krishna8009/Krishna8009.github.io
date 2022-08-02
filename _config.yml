@@ -1,10 +1,10 @@
 title: My Site
-#name: My linked notebook
-#user_description: notenote.link
+name: My linked notebook
+user_description: notenote.link
 notes_url: "https://krishna8009.github.io"
-#profile_pic: /assets/img/profile.png
-#favicon: /assets/img/favicon.png
-#copyright_name: MIT
+profile_pic: /assets/img/profile.png
+favicon: /assets/img/favicon.png
+copyright_name: MIT
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://krishna8009.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
@@ -37,8 +37,8 @@ collections:
       output: true
       permalink: /notes/:title
 
-#toc:
-  # max_level: 3
+toc:
+  max_level: 3
 
 defaults:
   - scope:
