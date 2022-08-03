@@ -48,3 +48,9 @@ defaults:
     values:
       layout: post
       content-type: notes
+      
+# show headers
+show_header: true
+
+# show a download link
+show_downloads: true
