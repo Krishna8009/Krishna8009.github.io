@@ -665,7 +665,6 @@ hr {
     color: #ff79c6; 
     padding-top: 12.5px;
     z-index: 1;
-	border-right: 2px solid #ff79c6;
 }
   
 .searchbar input[type="text"]:focus {
