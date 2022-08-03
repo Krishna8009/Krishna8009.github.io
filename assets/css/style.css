@@ -17,6 +17,7 @@ html {
 
 body {
     counter-reset: sidenote-counter; 
+	background-color: #282a36;
 }
 
 .container {
@@ -33,6 +34,7 @@ body {
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
+	background-color: #282a36;
 }
 
 .box {
@@ -42,17 +44,20 @@ body {
     width: 80%;
     position: absolute;
     top: 0px;
+	background-color: #282a36;
 }
 
 header {
     display: flex;
     flex-direction: column;
+	background-color: #282a36;
 }
 
 main {
     min-height: 300px;
     margin-left: 20px;
     padding-right: 10px;
+	background-color: #282a36;
 }
 
 
@@ -83,13 +88,13 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #555555;
+    color: #50fa7b;
     font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-weight: 600;
 }  
 
 a, p, ul, li, ol, table, span, blockquote {
-    color: #555555;
+    color: #50fa7b;
     font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 18px;  /* Let's set the font-size to something old-man friendly */
 }
@@ -121,6 +126,7 @@ ul ul {
 
 b, strong {
     font-weight: 600;
+	color:#50fa7b;
 }
 
 
@@ -129,6 +135,7 @@ b, strong {
 img {
     max-width: 100%;
     height: auto;
+	border-color:#6272a4
 }
 
 
@@ -175,7 +182,7 @@ pre code {
     background-color: #282a36;
     border: 1px solid #e9e9e9;
     border-radius: 5px;
-    color: #555;
+    color: #50fa7b;
     tab-size: 2;
 }
 
@@ -207,7 +214,8 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    color: #555;
+    color: #50fa7b;
+	font-style:bold;
     padding: 8px;
     text-align: left;
     font-size: 12px;
@@ -223,7 +231,7 @@ td a {
 }
 
 .item-title {
-    color: #555;
+    color: #50fa7b;
     font-weight: 600;
 }
 
@@ -266,7 +274,7 @@ hr {
 }
 
 .site-heading h4 {
-    color: #555555;
+    color: #50fa7b;
     font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-stretch: ultra-condensed;
     float: right;
@@ -328,7 +336,7 @@ hr {
 
 .username:hover {
     text-decoration: underline;
-    color: #555;
+    color: #50fa7b;
 }
 
 .userdesc {
@@ -381,7 +389,7 @@ hr {
     display: inline-block;
     justify-content: center;
     border-right: 1px solid #282a36;
-    color: #555555; 
+    color: #50fa7b; 
 }
 
 .rss, .categories {
@@ -400,13 +408,13 @@ hr {
    font-weight: 600;
    font-size: 0.7rem; 
    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-   color: #555555; 
+   color: #50fa7b; 
 }
 
 .icon-home, .icon-category, .icon-projects, .icon-rss {
     margin-top: 7px;
     justify-content: center;
-    stroke: #555555;
+    stroke: #50fa7b;
 }
 
 
@@ -473,7 +481,7 @@ hr {
 
 
 .notes-page-heading {
-    color: #555555;
+    color: #50fa7b;
     font-size: 15px;
     font-weight: 600;
     padding-top: 15px;
@@ -485,9 +493,9 @@ hr {
 }
 
 .notes-page-tagline {
-    color: #888888;
+    color: #ff79c6;
     margin-top: -17px; 
-    color: #888888;
+    color: #ff79c6;
     font-size: 0.7rem; 
     font-weight: 550; 
 }
@@ -532,7 +540,7 @@ hr {
 }
 
 .default-color {
-    color: #555 !important;
+    color: #50fa7b !important;
 }
 
 .default-background {
@@ -633,12 +641,11 @@ hr {
     box-sizing : border-box;
     width: 100%;
     height: 40px;
-    border: 0px;
     font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
-    color: #555;
+    color: #44475a;
     font-size: 18px;
-    border-bottom: 1px solid #282a36;
-    background-color: #282a36;
+    border: 1px solid #ff79c6;
+    background-color: #44475a;
 }
 
 ::placeholder {
@@ -651,7 +658,7 @@ hr {
     vertical-align: middle;
     margin-top: -2px;
     padding-left: 20px;
-    color: #888; 
+    color: #ff79c6; 
     padding-top: 12.5px;
     z-index: 1;
 }
@@ -662,12 +669,12 @@ hr {
 }
   
 .searchbar input[type=text]:hover {
-    background-color: white;
+    background-color: #44475a;
 }
   
 .searchbar input[type=text]:active,
 .searchbar input[type=text]:focus {
-    background-color: white;
+    background-color: #44475a;
     outline: none;
 } 
 
@@ -676,7 +683,7 @@ hr {
 }
 
 .search_res:hover {
- background-color: #f4f4f4;
+ background-color: #44475a;
 }
 
 .search_res:hover > a {
@@ -688,9 +695,9 @@ hr {
 }
 
 .back-icon {
-    background-color: white;
+    background-color: #44475a;
     fill: currentColor;
-    color: #555555;
+    color: #50fa7b;
     margin-top: 5px;
     padding-left: 5px; 
     fill: currentColor;
@@ -704,7 +711,7 @@ hr {
 }
 
 .back-p {
-    color: #555555;
+    color: #50fa7b;
     text-decoration: none;
     cursor: pointer;
     font-weight: 600;
@@ -743,7 +750,7 @@ hr {
 }
 
 .feed-title {
-    color: #555555;
+    color: #50fa7b;
     margin-left: 20px;
     margin-right: 50px;
     font-size: 16px;
@@ -752,7 +759,7 @@ hr {
 }
 
 .feed-excerpt{
-    color: #555555;
+    color: #50fa7b;
     margin-top: -12px;
     margin-left: 20px !important;
     margin-right: 30px;
@@ -772,7 +779,7 @@ hr {
 }
 
 .tag {
-    color: #555555;
+    color: #50fa7b;
     background: #282a36;
     text-decoration: none;
     display: inline-block;
@@ -905,7 +912,7 @@ li .mn-right {
     margin-left:20px;
     transform:translate(0, -50%);
     padding:10px 20px;
-    color:#555;
+    color:#50fa7b;
     background-color:#fff;
     font-weight:normal;
     font-size:13px;
@@ -963,7 +970,7 @@ input.margin-toggle {
 }
 
 .srs-svg {
-    stroke: #555;
+    stroke: #50fa7b;
 }
 
 label.sidenote-number {
@@ -1014,7 +1021,7 @@ label.srs-toggle {
 }
 
 .related h4 {
-    color: #888888;
+    color: #ff79c6;
     padding-top: 20px;
     padding-left: 20px
 }
@@ -1065,7 +1072,7 @@ img[src*='#center'] {
 }
 
 .related-excerpt {
-    color: #555555 !important;
+    color: #50fa7b !important;
     padding-left: 10px;
     padding-right: 5px;
     font-size: 12px !important;
@@ -1079,7 +1086,7 @@ img[src*='#center'] {
     background-color: transparent;
     background-repeat: no-repeat;
     cursor: pointer;
-    color: #555;
+    color: #50fa7b;
     outline: none;
     border: none;
     overflow: hidden;
@@ -1110,7 +1117,7 @@ img[src*='#center'] {
 }
 
 .context-menu-res li:hover {
-    color: #555;
+    color: #50fa7b;
     background-color: #f4f4f4;
 }
 
@@ -1119,7 +1126,7 @@ img[src*='#center'] {
 }
 
 .context-menu-res__link {
-    color: #555;
+    color: #50fa7b;
     text-decoration: none;
 }
 
@@ -1161,14 +1168,14 @@ img[src*='#center'] {
 .context-menu__link {
   display: block;
   padding: 4px 12px;
-  color: #555;
+  color: #50fa7b;
   text-decoration: none;
   font-size: 12px;
   font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .context-menu__link:hover {
-  color: #555;
+  color: #50fa7b;
   background-color: #f4f4f4;
 }
 
@@ -1300,7 +1307,7 @@ width: 30% !important;
         left:50%;
         transform:translate(-50%, 0);
         padding:10px 20px;
-        color:#555;
+        color:#50fa7b;
         background-color:#fff;
         font-weight:normal;
         font-size:13px;
