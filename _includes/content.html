@@ -12,7 +12,8 @@
     {%- endif -%}
 </ul>
 {%- endif -%}
-{% include toc.html html=content %}
+<hr></hr>
+{% include toc.html html=content h_min=1 h_max=4 %}
 <div class="content">
 
     {%- assign content_array = content | split:'[[' -%}

@@ -5,7 +5,12 @@ layout: stylesheet
 /******************************************************
  *             PREDEFINE TAGS CSS                     *
 *******************************************************/
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "/assets/css/highlight.css";
@@ -41,7 +46,7 @@ body {
     border-left: 1px solid #44475a;
     border-right: 1px solid #44475a;
     border-bottom: 1px solid #44475a;
-    width: 80%;
+    width: 100%;
     position: absolute;
     top: 0px;
 	background-color:#282a36;
@@ -65,17 +70,17 @@ main {
 
 h1 {
     font-size: 29px;
-	color : #ffb86c !important;
+	color : #50fa7b !important;
 }
 
 h2 {
     font-size: 25px;
-	color: #ff79c6 !important;
+	color: #bd93f9 !important;
 }
 
 h3 {
     font-size: 22px;
-	color: #bd93f9 !important;
+	color: #ff79c6 !important;
 }
 
 h4 {
@@ -90,18 +95,23 @@ h5 {
 
 h6 {
     font-size: 13px;
-	color : #f7e98e !important;
+	color : #ffb86c !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #f8f8f2;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+	/* font-family: 'Atkinson Hyperlegible', sans-serif; */
+	font-family: 'JetBrains Mono', monospace;
+	/* font-family: 'Fira Code', monospace; */
     font-weight: 600;
 }  
 
 a, p, ul, li, ol, table, span, blockquote {
     color: #f8f8f2;
-    font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    /* font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+	/* font-family: 'Atkinson Hyperlegible', sans-serif; */
+	font-family: 'JetBrains Mono', monospace;
     font-size: 18px;  /* Let's set the font-size to something old-man friendly */
 }
 
@@ -144,8 +154,8 @@ img {
 
 
 code {
-    font-family: Consolas, 'Courier New', Courier, monospace;
-    font-family: Consolas, 'Courier New', Courier, monospace;
+    font-family: 'JetBrains Mono', monospace;
+    /* font-family: Consolas, 'Courier New', Courier, monospace; */
     display: inline-block;
     overflow: auto !important;
     white-space: pre ;
@@ -270,7 +280,8 @@ hr {
 /* Blogposts: Post-heading, Post-subheading, Post-content, Related Posts*/
 
 .site-heading {
-    border-bottom: 2px solid #44475a;
+    border-bottom: 2px solid #21222c;
+	background-color: #21222c;
     flex: 0 0 20px;
     align-self: stretch;
     align-content: flex-end;
@@ -278,16 +289,19 @@ hr {
 
 .site-heading h4 {
     color: #f8f8f2;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-stretch: ultra-condensed;
-    float: right;
+    /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+	font-family: 'JetBrains Mono', monospace;
+    /* font-stretch: ultra-condensed; */
+    /* float: right; */
     margin-bottom: 10px;
     margin-right: 20px;
-    font-weight: 500;
+	margin-left:110px;
+    font-weight: 700;
 }
 
 .site-heading a {
     text-decoration: none;
+	color:#50fa7b;
 }
 
 .avatar {
@@ -297,24 +311,24 @@ hr {
 }
 
 .avatar-link {    
-    background-color: #fff;
+    background-color: #21222C;
     border-radius: 50%;
     display: inline-block !important;
     float: left;
     margin: -35px 5px 0 8px;
     max-width: 100%;
-    padding: 1px;
+    padding: 2px;
     vertical-align: bottom;
     font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .avatar-img {
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #44475a;
+    color: #44475a;
     border-radius: 50%;
     box-sizing: border-box;
-    height: 80px;
-    width: 80px;
+    height: 75px;
+    width: 75px;
 }
 
 
@@ -360,7 +374,8 @@ hr {
 .link-to-notes a {
     color: #4183c4;
     text-decoration: none;
-    font-family: 'IBM Plex Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: 'IBM Plex Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+	font-family: 'JetBrains Mono', monospace;
     font-size: 15px;
     margin-left: -3px;
 }
@@ -391,8 +406,9 @@ hr {
     vertical-align: middle;
     display: inline-block;
     justify-content: center;
-    border-right: 1px solid #44475a;
-    color: #f8f8f2; 
+    /* border-right: 1px solid #44475a; */
+    color: #50fa7b;
+	text-decoration:underline;
 }
 
 .rss, .categories {
@@ -410,14 +426,15 @@ hr {
    text-align: center;
    font-weight: 600;
    font-size: 0.7rem; 
-   font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-   color: #f8f8f2; 
+   font-family: 'JetBrains Mono', monospace;
+   /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+   color: #50fa7b; 
 }
 
 .icon-home, .icon-category, .icon-projects, .icon-rss {
     margin-top: 7px;
     justify-content: center;
-    stroke: #f8f8f2;
+    stroke: #50fa7b;
 }
 
 
@@ -440,7 +457,7 @@ hr {
 /* Notes: Note-heading, Note-subheading, Notes-content, Related Notes */
 
 .section-nav {
-    background-color: #fff;
+    background-color: #44475a;
     margin: 10px 0;
     padding: 10px 30px;
     border: 1px solid #e8e8e8;
@@ -469,7 +486,8 @@ hr {
 
 .notes-page-site-heading a {
     text-decoration: none;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
     font-weight: 600;
     font-size: 13px;
     font-stretch: ultra-condensed;
@@ -488,7 +506,8 @@ hr {
     font-size: 15px;
     font-weight: 600;
     padding-top: 15px;
-    font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
 }
 
 .notes-page-heading a {
@@ -559,7 +578,9 @@ hr {
 }
 
 .title-sans {
-    font-family: Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    /* font-family: Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; */
+	font-family: 'JetBrains Mono', monospace;
+	color:#bd93f9;
 }
 
 .regular-sans {
@@ -568,10 +589,12 @@ hr {
 
 .bold {
     font-weight: 600 !important;
+	color:#50fa7b;
 }
 
 .very-bold {
     font-weight: 800 !important;
+	color:#50fa7b;
 }
 
 .bolder {
@@ -580,6 +603,7 @@ hr {
 
 .normal {
     font-weight: 400 !important;
+	color:#50fa7b;
 }
 
 .regular {
@@ -588,15 +612,18 @@ hr {
 
 .oblique {
     font-style: oblique !important;
+	color:#ffb86c;
 }
 
 .italic {
     font-style: italic !important;
+	color:#ffb86c;
 }
 
 .boxit {
-    font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 18px;  /* Let's set the font-size to something old-man friendly */
+    /* font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+    font-family: 'JetBrains Mono', monospace;
+	font-size: 18px;  /* Let's set the font-size to something old-man friendly */
     padding: 20px;
     background-color: #44475a;
     border-radius: 5px;
@@ -637,18 +664,18 @@ hr {
 
 
 /* Common custom components between Main Site and Notes: Searchbar, Backbutton, ContentBox, Related Posts/Notes, Copyright,  */
-
 .searchbar input[type="text"] {
     position: relative;
     padding-left: 50px;
     box-sizing : border-box;
     width: 100%;
     height: 40px;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
-    color: #f8f8f2 !important;
+    border: 0px;
+    /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important; */
+    font-family: 'JetBrains Mono', monospace;
+	color: #f8f8f2;
     font-size: 18px;
-    border: 2px solid #ff79c6;
-	border-radius : 5px;
+    border-bottom: 3px solid #50fa7b;
     background-color: #44475a;
 }
 
@@ -662,14 +689,13 @@ hr {
     vertical-align: middle;
     margin-top: -2px;
     padding-left: 20px;
-    color: #ff79c6; 
+    color: #50fa7b; 
     padding-top: 12.5px;
     z-index: 1;
 }
   
 .searchbar input[type="text"]:focus {
     border-color: #44475a;
-    box-shadow: 0 0 8px 0 #44475a;
 }
   
 .searchbar input[type=text]:hover {
@@ -696,12 +722,13 @@ hr {
 
 #results-container {
     display: none;
+	color:#50fa7b;
 }
 
 .back-icon {
     background-color: #282a36;
     fill: currentColor;
-    color: #ff79c6;
+    color: #bd93f9;
     margin-top: 5px;
     padding-left: 5px; 
     fill: currentColor;
@@ -712,11 +739,13 @@ hr {
 .back-p {
     vertical-align: middle;
     display: inline-block;
+	font-family: 'JetBrains Mono', monospace;
 }
 
 .back-p {
-    color: #f8f8f2;
-    text-decoration: none;
+    color: #bd93f9;
+    text-decoration: underline;
+	font-family: 'JetBrains Mono', monospace;
     cursor: pointer;
     font-weight: 600;
 }
@@ -754,11 +783,12 @@ hr {
 }
 
 .feed-title {
-    color: #f8f8f2;
+    color: #bd93f9;
     margin-left: 20px;
     margin-right: 50px;
     font-size: 16px;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
     font-weight: 600;
 }
 
@@ -767,7 +797,8 @@ hr {
     margin-top: -12px;
     margin-left: 20px !important;
     margin-right: 30px;
-    font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
     font-size: 15px;
 }
 
@@ -783,21 +814,28 @@ hr {
 }
 
 .tag {
-    color: #f8f8f2;
-    background: #44475a;
+    color: #50fa7b;
+	border: 1px solid #50fa7b;
+    background: #22212c;
     text-decoration: none;
     display: inline-block;
     padding: 0 12px;
     border-radius: 32px;
     height: auto;
     vertical-align: middle;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
     font-weight: normal !important;
     font-size: 13px;
 }
 
+.tag:hover{
+	text-decoration:underline
+}
+
 .content a {
-    color: #4183c4;
+    /* color: #4183c4;*/
+	color: #8be9fd;
     text-decoration: none;
 }
 
@@ -809,7 +847,8 @@ hr {
 .mn-right {
     float: right;
     clear: right;
-    font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; */
     font-size: 14px;
     margin-right: -45%;
     width: 40%;
@@ -824,7 +863,8 @@ hr {
 .mn-left {
     float: left;
     clear: left;
-    font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; */
     font-size: 13px;
     margin-left: -20%;
     width: 10%;
@@ -842,7 +882,8 @@ hr {
 .sidenote-number:after,
 .sn-left:before,
 .sn-right:before {
-    font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; */
     position: relative;
     vertical-align: baseline; 
 }
@@ -917,7 +958,7 @@ li .mn-right {
     transform:translate(0, -50%);
     padding:10px 20px;
     color:#f8f8f2;
-    background-color:#fff;
+    background-color:#44475a;
     font-weight:normal;
     font-size:13px;
     border-radius:8px;
@@ -950,7 +991,7 @@ li .mn-right {
     left:0;
     top:50%;
     transform:translate(50%,-50%) rotate(-45deg);
-    background-color:#fff;
+    background-color:#44475a;
     box-shadow:0 1px 8px #ddd;
 }
 
@@ -1009,7 +1050,7 @@ label.srs-toggle {
     position: relative; 
     padding: 12px;
     width: 300px;
-    background-color: #fff;
+    background-color: #44475a;
     border: solid 1px #dfdfdf;
     border-radius: 5px;
     box-shadow: 1px 1px 15px #cfcfcf;
@@ -1018,7 +1059,7 @@ label.srs-toggle {
 }
 
 .related {
-    background-color: #44475a;
+    background-color: #282a36;
     width: 100%;
     min-height: 100px;
     border-radius: 10px;
@@ -1051,7 +1092,7 @@ img[src*='#center'] {
 }
 
 .related-group:hover {
-    background-color: #ededed !important;
+    background-color: #44475a !important;
 }
 
 .related-group a {
@@ -1059,20 +1100,25 @@ img[src*='#center'] {
 }
 
 .related-title {
+	color:#f1fa8c;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 12px !important;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+	font-family: 'JetBrains Mono', monospace;
+    /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important; */
     font-weight: 600;
+	background-color:#44475a;
 }
 
 .related-excerpt:before {
     content: "\"";
+	background-color:#44475a;
 }
 
 
 .related-excerpt:after {
     content: "\"";
+	background-color:#44475a;
 }
 
 .related-excerpt {
@@ -1080,6 +1126,7 @@ img[src*='#center'] {
     padding-left: 10px;
     padding-right: 5px;
     font-size: 12px !important;
+	background-color:#44475a;
 }
 
 .scroll-to-top {
@@ -1090,7 +1137,7 @@ img[src*='#center'] {
     background-color: transparent;
     background-repeat: no-repeat;
     cursor: pointer;
-    color: #f8f8f2;
+    color: #50fa7b;
     outline: none;
     border: none;
     overflow: hidden;
@@ -1103,7 +1150,7 @@ img[src*='#center'] {
     z-index: 10;
     padding: 12px 0;
     width: 240px;
-    background-color: #fff;
+    background-color: #44475a;
     border: solid 1px #dfdfdf;
     border-radius: 5px;
     box-shadow: 1px 1px 15px #cfcfcf;
@@ -1143,7 +1190,7 @@ img[src*='#center'] {
     z-index: 10;
     padding: 12px 0;
     width: 177px;
-    background-color: #fff;
+    background-color: #44475a;
     border: solid 1px #dfdfdf;
     border-radius: 5px;
     box-shadow: 1px 1px 15px #cfcfcf;
@@ -1175,7 +1222,8 @@ img[src*='#center'] {
   color: #f8f8f2;
   text-decoration: none;
   font-size: 12px;
-  font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
+  /* font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
 }
 
 .context-menu__link:hover {
@@ -1195,6 +1243,15 @@ img[src*='#center'] {
 #copyright-notice {
     font-size: 0.7rem;
     font-weight: 700;
+	color:#50fa7b;
+}
+
+/* horizontal rule styling */
+hr {
+    background-color: #44475a;
+    color: #44475a;
+    border: 0 none;
+    height: 1px;
 }
 
 /* IE-SPECIFIC STYLING */
@@ -1291,7 +1348,7 @@ width: 30% !important;
 }
 
 .related-group {
-    background-color: #ededed !important;
+    background-color: #44475a !important;
     margin-left: 10px;
     width: 90% !important;
     height: 100%;
@@ -1312,14 +1369,14 @@ width: 30% !important;
         transform:translate(-50%, 0);
         padding:10px 20px;
         color:#f8f8f2;
-        background-color:#fff;
+        background-color:#44475a;
         font-weight:normal;
         font-size:13px;
         border-radius:8px;
         position:absolute;
         z-index:99999999;
         box-sizing:border-box;
-        box-shadow:0 1px 8px #ddd;
+        box-shadow:0 1px 8px #44475a;
         display:none;
     }
     
@@ -1344,14 +1401,15 @@ width: 30% !important;
         height:12px;
         left:50%;
         transform:translate(-50%,50%) rotate(45deg);
-        background-color:#fff;
-        box-shadow:0 1px 8px #ddd;
+        background-color:#44475a;
+        box-shadow:0 1px 8px #44475a;
     }
     
     .bottom .tooltip-title {
         font-size: 15px;
         font-weight: 500;
         display: inline-block;
+		color:#f1fa8c;
     }
     
     .bottom .tooltip-excerpt {
@@ -1382,7 +1440,7 @@ width: 30% !important;
 @media screen and (max-width: 800px){
 
 .box {
-    width: 80%;
+    width: 100%;
 }
 
 label {
